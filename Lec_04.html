@@ -1,0 +1,103 @@
+
+<!-- <iframe>:
+
+    Embeds another webpage or resource within the current webpage.
+    Used here to embed a YouTube video.
+    <audio>:
+    
+    Plays audio files.
+    Includes multiple source elements for compatibility with different audio formats.
+    <video>:
+    
+    Plays video files.
+    Includes multiple source elements for compatibility.
+    <source>:
+    
+    Provides media resources for audio and video.
+    Helps ensure compatibility with different formats.
+    <track>:
+    
+    Adds subtitles or captions to videos.
+    Used here to provide English subtitles.
+    <embed>:
+    
+    Embeds an external resource, such as a PDF or media file.
+    Used here to embed a PDF document.
+    <object>:
+    
+    Embeds multimedia objects like Flash animations or other resources.
+    Includes param elements for configuration.
+    <param>:
+    
+    Defines parameters for an object element.
+    Used here for a legacy Flash animation example. -->
+    
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Multimedia Elements Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: navy;
+        }
+        iframe, video, audio, embed, object {
+            display: block;
+            margin: 20px 0;
+            width: 100%;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Multimedia Elements Demonstration</h1>
+
+    <h2>1. Iframe</h2>
+    <p>Embedding a YouTube video using an iframe:</p>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+
+    <h2>2. Audio</h2>
+    <p>Playing an audio file:</p>
+    <audio controls>
+        <source src="audio_sample.mp3" type="audio/mpeg">
+        <source src="audio_sample.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>3. Video</h2>
+    <p>Playing a video file:</p>
+    <video controls>
+        <source src="video_sample.mp4" type="video/mp4">
+        <source src="video_sample.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>4. Video with Track</h2>
+    <p>Video with subtitles:</p>
+    <video controls>
+        <source src="video_sample.mp4" type="video/mp4">
+        <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>5. Embed</h2>
+    <p>Embedding a PDF file:</p>
+    <embed src="sample.pdf" type="application/pdf" width="600" height="400">
+
+    <h2>6. Object and Param</h2>
+    <p>Embedding a Flash object (legacy example):</p>
+    <object data="flash_animation.swf" type="application/x-shockwave-flash" width="600" height="400">
+        <param name="movie" value="flash_animation.swf">
+        <param name="quality" value="high">
+        Your browser does not support the object element.
+    </object>
+</body>
+</html>

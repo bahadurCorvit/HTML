@@ -1,0 +1,73 @@
+<!-- <!DOCTYPE html>: Declares the document type and version of HTML (HTML5 in this case).
+<html>: The root element of the HTML document with the language attribute.
+<head>: Contains metadata, links, and scripts.
+<title>: Specifies the title displayed in the browser tab.
+<meta>: Defines metadata, such as character set, viewport, and description.
+<base>: Sets the base URL for all relative links in the document.
+<link>: Links external stylesheets or resources.
+<style>: Contains internal CSS styles.
+<script>: Includes JavaScript for dynamic functionality.
+<noscript>: Provides a fallback message for users without JavaScript enabled.
+<body>: Contains the visible content of the webpage. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the character set and general meta information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Elements Project Example">
+    <meta name="author" content="Your Name">
+
+    <!-- Base URL for all relative links -->
+    <base href="https://example.com/">
+
+    <!-- Title of the Webpage -->
+    <title>HTML Elements Project</title>
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Inline styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: navy;
+        }
+        .container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .noscript-message {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <h1>HTML Elements Demonstration</h1>
+        <p>This project demonstrates the usage of various HTML elements.</p>
+
+        <!-- Script functionality -->
+        <script>
+            document.write("<p><strong>JavaScript is enabled!</strong></p>");
+        </script>
+
+        <!-- Noscript fallback -->
+        <noscript>
+            <p class="noscript-message">JavaScript is not enabled in your browser. Some features may not work.</p>
+        </noscript>
+
+        <!-- Example of using a link -->
+        <p>Visit <a href="docs/tutorial.html">this tutorial</a> for more information on HTML elements.</p>
+    </div>
+</body>
+</html>

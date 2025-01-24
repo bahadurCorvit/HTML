@@ -1,0 +1,148 @@
+<!-- <form>: Defines a form for user input.
+    <input>: Represents various input fields, such as text, email, radio buttons, and password.
+    <label>: Defines labels for form controls to make them more accessible and user-friendly.
+    <button>: Represents a button in a form that can be clicked to submit or trigger an action.
+    <textarea>: Represents a multi-line text input for longer text entries.
+    <select>: Represents a dropdown list of options for selection.
+    <option>: Defines individual options inside a <select> element.
+    <optgroup>: Groups related options within a <select> dropdown list.
+    <fieldset>: Groups related form elements together and provides visual structure.
+    <datalist>: Provides an auto-complete feature for an <input> element by offering predefined options.
+    <output>: Represents the result of a calculation or user action, displayed dynamically. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Elements Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+        fieldset {
+            border: 2px solid #ccc;
+            padding: 20px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, button, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Form Elements Demonstration</h1>
+
+    <form action="#" method="POST">
+        <!-- Fieldset for Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Gender -->
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <!-- Age Group -->
+            <label for="ageGroup">Age Group:</label>
+            <select id="ageGroup" name="ageGroup">
+                <option value="under18">Under 18</option>
+                <option value="18-25">18-25</option>
+                <option value="26-40">26-40</option>
+                <option value="41-60">41-60</option>
+                <option value="60plus">60+</option>
+            </select>
+        </fieldset>
+
+        <!-- Address -->
+        <fieldset>
+            <legend>Address</legend>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </fieldset>
+
+        <!-- Contact Information -->
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="website">Website (optional):</label>
+            <input type="url" id="website" name="website">
+
+            <label for="preferredContact">Preferred Contact Method:</label>
+            <select id="preferredContact" name="preferredContact">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="postal">Postal Mail</option>
+            </select>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <h2>Real-time Form Data</h2>
+    <form id="dataForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <label for="color">Favorite Color:</label>
+        <input list="colors" id="color" name="color">
+        <datalist id="colors">
+            <option value="Red">
+            <option value="Blue">
+            <option value="Green">
+            <option value="Yellow">
+            <option value="Purple">
+        </datalist>
+
+        <output name="result" id="result">Your input will be displayed here.</output>
+
+        <button type="button" onclick="displayData()">Display Data</button>
+    </form>
+
+    <script>
+        function displayData() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const color = document.getElementById("color").value;
+            const result = document.getElementById("result");
+
+            result.textContent = `Username: ${username}, Password: ${password}, Favorite Color: ${color}`;
+        }
+    </script>
+</body>
+</html>

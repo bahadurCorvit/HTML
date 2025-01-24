@@ -1,0 +1,152 @@
+<!-- <img>:
+
+Used to display an image on the webpage.
+Example:
+html
+Copy code
+<img src="https://via.placeholder.com/400" alt="Placeholder Image">
+<map> and <area>:
+
+<map>: Defines an image map, which can be used to create clickable areas on an image.
+<area>: Defines each clickable area within the image map.
+Example:
+html
+Copy code
+<map name="image-map">
+    <area shape="rect" coords="0,0,200,200" href="https://www.wikipedia.org" alt="Wikipedia" target="_blank">
+    <area shape="rect" coords="200,0,400,200" href="https://www.google.com" alt="Google" target="_blank">
+</map>
+<picture>:
+
+Used for responsive images, where different image sources are used depending on the viewport size.
+Example:
+html
+Copy code
+<picture>
+    <source srcset="image-large.jpg" media="(min-width: 600px)">
+    <img src="image-small.jpg" alt="Responsive Image">
+</picture>
+<figure> and <figcaption>:
+
+<figure>: Represents content (like an image) along with its caption.
+<figcaption>: Provides a caption for the <figure>.
+Example:
+html
+Copy code
+<figure>
+    <img src="image.jpg" alt="Image Description">
+    <figcaption>Image caption goes here.</figcaption>
+</figure>
+<canvas>:
+
+Provides an area to draw graphics, like images or animations, using JavaScript.
+Example:
+html
+Copy code
+<canvas id="myCanvas" width="300" height="150"></canvas>
+<svg>:
+
+Defines Scalable Vector Graphics (SVG) directly in the HTML. It allows for creating graphics like circles, rectangles, and paths.
+Example:
+html
+Copy code
+<svg width="400" height="110">
+    <circle cx="200" cy="50" r="40" stroke="black" stroke-width="3" fill="yellow" />
+</svg> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Image and Graphics Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+        .image-container {
+            margin-bottom: 20px;
+        }
+        canvas {
+            border: 1px solid #000;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML Image and Graphics Elements</h1>
+    
+    <!-- <img> - Image Tag -->
+    <div class="image-container">
+        <h2>Image Example:</h2>
+        <img src="https://via.placeholder.com/400" alt="Placeholder Image">
+        <p>This is an image displayed using the <code>&lt;img&gt;</code> tag.</p>
+    </div>
+
+    <!-- <map> and <area> - Image Map -->
+    <div class="image-container">
+        <h2>Image Map Example:</h2>
+        <img src="https://via.placeholder.com/400" alt="Image Map" usemap="#image-map">
+        <map name="image-map">
+            <area shape="rect" coords="0,0,200,200" href="https://www.wikipedia.org" alt="Wikipedia" target="_blank">
+            <area shape="rect" coords="200,0,400,200" href="https://www.google.com" alt="Google" target="_blank">
+        </map>
+        <p>Click on different areas of the image to visit Wikipedia and Google using the <code>&lt;map&gt;</code> and <code>&lt;area&gt;</code> tags.</p>
+    </div>
+
+    <!-- <picture> - Picture Tag -->
+    <div class="image-container">
+        <h2>Picture Example:</h2>
+        <picture>
+            <source srcset="https://via.placeholder.com/400/ff6347" media="(min-width: 600px)">
+            <img src="https://via.placeholder.com/400/4682b4" alt="Responsive Image">
+        </picture>
+        <p>The <code>&lt;picture&gt;</code> element provides multiple image sources for different screen sizes.</p>
+    </div>
+
+    <!-- <figure> and <figcaption> - Image with Caption -->
+    <div class="image-container">
+        <h2>Figure Example:</h2>
+        <figure>
+            <img src="https://via.placeholder.com/400" alt="Placeholder Image with Caption">
+            <figcaption>This is an example of an image with a caption.</figcaption>
+        </figure>
+        <p>The <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> elements allow you to associate a caption with an image.</p>
+    </div>
+
+    <!-- <canvas> - Canvas Element -->
+    <div class="image-container">
+        <h2>Canvas Example:</h2>
+        <canvas id="myCanvas" width="300" height="150"></canvas>
+        <p>The <code>&lt;canvas&gt;</code> element can be used to draw graphics dynamically using JavaScript.</p>
+    </div>
+
+    <!-- <svg> - SVG Graphics -->
+    <div class="image-container">
+        <h2>SVG Example:</h2>
+        <svg width="400" height="110">
+            <circle cx="200" cy="50" r="40" stroke="black" stroke-width="3" fill="yellow" />
+            <rect x="50" y="50" width="150" height="100" stroke="black" stroke-width="3" fill="green" />
+        </svg>
+        <p>The <code>&lt;svg&gt;</code> element allows you to create scalable vector graphics directly in HTML.</p>
+    </div>
+
+    <script>
+        // Drawing on the Canvas using JavaScript
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#ff6347";
+        ctx.fillRect(10, 10, 150, 100);
+    </script>
+
+</body>
+</html>

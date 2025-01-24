@@ -1,0 +1,145 @@
+<!-- <p>: Defines a paragraph of text.
+    <br>: Inserts a line break within text.
+    <hr>: Represents a horizontal rule (line) to separate content.
+    <b>: Makes text bold (without implying importance).
+    <i>: Makes text italicized (without implying emphasis).
+    <small>: Reduces the font size of text.
+    <mark>: Highlights text with a yellow background.
+    <del>: Represents deleted text (strikethrough).
+    <ins>: Represents inserted text (underlined).
+    <strong>: Emphasizes text, indicating strong importance (bold).
+    <em>: Emphasizes text (italic).
+    <sub>: Displays text as subscript (smaller, below the baseline).
+    <sup>: Displays text as superscript (smaller, above the baseline).
+    <blockquote>: Defines a block-level quotation.
+    <q>: Represents an inline quotation.
+    <abbr>: Defines an abbreviation or acronym (with title for expanded form).
+    <address>: Represents contact information.
+    <cite>: Defines the title of a reference (e.g., a book, article).
+    <bdo>: Reverses the direction of text (used for bidirectional text).
+    <code>: Defines a piece of computer code.
+    <pre>: Represents preformatted text, maintaining whitespace and line breaks.
+    <samp>: Represents sample output from a program.
+    <kbd>: Represents user keyboard input.
+    <var>: Defines a variable (often used in mathematical expressions).
+    <dfn>: Represents a term being defined.
+    <meter>: Represents a scalar measurement within a known range (e.g., progress or results).
+    <progress>: Represents the progress of a task.
+    <u>: Underlines text. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Text Formatting Elements Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: navy;
+        }
+        blockquote {
+            border-left: 4px solid #ccc;
+            margin-left: 20px;
+            padding-left: 10px;
+            font-style: italic;
+        }
+        code {
+            font-family: monospace;
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+        }
+        pre {
+            font-family: monospace;
+            background-color: #f4f4f4;
+            padding: 10px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Text Formatting Elements Demonstration</h1>
+
+    <h2>1. Paragraph (`<p>`) and Line Break (`<br>`) </h2>
+    <p>This is a paragraph of text. <br> We use the <code>&lt;br&gt;</code> tag to break the line within a paragraph.</p>
+
+    <h2>2. Horizontal Rule (`<hr>`) </h2>
+    <p>Below is a horizontal rule:</p>
+    <hr>
+
+    <h2>3. Bold (`<b>`) and Italic (`<i>`) </h2>
+    <p>The <b>bold</b> text makes important information stand out, while <i>italic</i> is used for emphasis or titles.</p>
+
+    <h2>4. Small (`<small>`) </h2>
+    <p>This is <small>small</small> text, usually used for disclaimers or secondary information.</p>
+
+    <h2>5. Marked (`<mark>`) </h2>
+    <p>This text is <mark>highlighted</mark> to bring attention to it.</p>
+
+    <h2>6. Deleted (`<del>`) and Inserted (`<ins>`) </h2>
+    <p>This is an example of a <del>deleted</del> word, and this is an <ins>inserted</ins> word.</p>
+
+    <h2>7. Strong (`<strong>`) and Emphasized (`<em>`) </h2>
+    <p>This is a <strong>strong</strong> word, indicating importance. This is an <em>emphasized</em> word, used for emphasis.</p>
+
+    <h2>8. Subscript (`<sub>`) and Superscript (`<sup>`) </h2>
+    <p>H<sub>2</sub>O is water. E=mc<sup>2</sup> is Einstein's famous equation.</p>
+
+    <h2>9. Blockquote (`<blockquote>`) </h2>
+    <blockquote>
+        "The only way to do great work is to love what you do." - Steve Jobs
+    </blockquote>
+
+    <h2>10. Inline Quote (`<q>`) </h2>
+    <p>As Steve Jobs once said, <q>The only way to do great work is to love what you do.</q></p>
+
+    <h2>11. Abbreviation (`<abbr>`) </h2>
+    <p>The <abbr title="HyperText Markup Language">HTML</abbr> is the standard markup language for creating web pages.</p>
+
+    <h2>12. Address (`<address>`) </h2>
+    <address>
+        Contact us at <a href="mailto:info@example.com">info@example.com</a>
+    </address>
+
+    <h2>13. Citation (`<cite>`) </h2>
+    <p>The book <cite>To Kill a Mockingbird</cite> is a masterpiece of modern American literature.</p>
+
+    <h2>14. Bi-directional Override (`<bdo>`) </h2>
+    <p>Normal text: abcdefgh <bdo dir="rtl">hgfedcba</bdo></p>
+
+    <h2>15. Code (`<code>`) </h2>
+    <p>Here's some code: <code>let x = 10;</code></p>
+
+    <h2>16. Preformatted Text (`<pre>`) </h2>
+    <pre>
+        This is preformatted text.
+        It preserves spaces and line breaks.
+    </pre>
+
+    <h2>17. Sample Output (`<samp>`) </h2>
+    <p>The output will be <samp>Success</samp> when the process completes.</p>
+
+    <h2>18. Keyboard Input (`<kbd>`) </h2>
+    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.</p>
+
+    <h2>19. Variable (`<var>`) </h2>
+    <p>The value of the variable <var>x</var> is 10.</p>
+
+    <h2>20. Definition (`<dfn>`) </h2>
+    <p><dfn>HTML</dfn> stands for HyperText Markup Language.</p>
+
+    <h2>21. Meter (`<meter>`) </h2>
+    <p>Progress: <meter value="60" min="0" max="100">60%</meter></p>
+
+    <h2>22. Progress (`<progress>`) </h2>
+    <p>Task completion: <progress value="70" max="100">70%</progress></p>
+
+    <h2>23. Underlined (`<u>`) </h2>
+    <p>This is <u>underlined</u> text.</p>
+
+</body>
+</html>

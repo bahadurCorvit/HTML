@@ -1,0 +1,91 @@
+<!-- <ul> (Unordered List):
+
+    A list where items are displayed with bullet points.
+    Example: Listing fruits or other unordered items.
+    <li> (List Item):
+    
+    Represents each item in an unordered (ul) or ordered (ol) list.
+    Used inside both ul and ol.
+    <ol> (Ordered List):
+    
+    A list where items are displayed with numbers, indicating a sequence.
+    Example: Steps in a process.
+    <dl> (Definition List):
+    
+    Represents a list of terms and their corresponding definitions.
+    Ideal for glossaries or explanations.
+    <dt> (Definition Term):
+    
+    Represents a term in a definition list.
+    <dd> (Definition Description):
+    
+    Provides the description or definition for the term in a dt.
+     -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML List Elements Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: navy;
+        }
+        ul {
+            list-style-type: square;
+            margin-bottom: 20px;
+        }
+        ol {
+            list-style-type: decimal;
+            margin-bottom: 20px;
+        }
+        dl {
+            margin-bottom: 20px;
+        }
+        dt {
+            font-weight: bold;
+            color: darkblue;
+        }
+        dd {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML List Elements Demonstration</h1>
+
+    <h2>1. Unordered List (`ul`)</h2>
+    <ul>
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Cherries</li>
+        <li>Grapes</li>
+    </ul>
+
+    <h2>2. Ordered List (`ol`)</h2>
+    <ol>
+        <li>Wake up</li>
+        <li>Brush your teeth</li>
+        <li>Have breakfast</li>
+        <li>Start your work</li>
+    </ol>
+
+    <h2>3. Definition List (`dl`, `dt`, `dd`)</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language, the standard markup language for creating web pages.</dd>
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets, used to style HTML elements.</dd>
+
+        <dt>JavaScript</dt>
+        <dd>A programming language that adds interactivity to web pages.</dd>
+    </dl>
+</body>
+</html>
